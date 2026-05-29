@@ -98,36 +98,35 @@
                 <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> 
                   <span>
                       <script>
+                       // Pon tu fecha de nacimiento aquí en formato "AAAA-MM-DD"
 
-        // Pon tu fecha de nacimiento aquí en formato "AAAA-MM-DD"
-
-        const fechaNacimiento = new Date("1994-03-22"); 
-
-        const hoy = new Date();
-
-
-
-        let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
-
-        const mes = hoy.getMonth() - fechaNacimiento.getMonth();
-
-
-
-        // Si aún no ha sido tu cumpleaños este año, restamos 1
-
-        if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
-
-            edad--;
-
-        }
-
-
-
-        // Coloca el resultado directamente en la etiqueta <p>
-
-        document.getElementById("miEdad").innerText = edad;
-
-    </script>
+                      const fechaNacimiento = new Date("1994-03-22"); 
+              
+                      const hoy = new Date();
+              
+              
+              
+                      let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+              
+                      const mes = hoy.getMonth() - fechaNacimiento.getMonth();
+              
+              
+              
+                      // Si aún no ha sido tu cumpleaños este año, restamos 1
+              
+                      if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
+              
+                          edad--;
+              
+                      }
+              
+              
+              
+                      // Coloca el resultado directamente en la etiqueta <p>
+              
+                      document.getElementById("miEdad").innerText = edad;
+              
+                  </script>
                   </span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Lugar de nacimiento:</strong> <span>Caracas, Venezuela</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Universidad:</strong> <span>I.U.J.O</span></li>
